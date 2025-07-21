@@ -1,4 +1,5 @@
 import { useState } from 'react'
+const apiKey = import.meta.env.VITE_WEATHER_API_KEY;
 
 export default function SearchBar({ onSearch, city }) {
   const [input, setInput] = useState('')
@@ -14,7 +15,7 @@ export default function SearchBar({ onSearch, city }) {
     }
     debounceTimeout = setTimeout(async () => {
       try {
-        const response = await fetch(`https://api.weatherapi.com/v1/search.json?key=8019b9a6a6ec4ccf9e9212735252107&q=${query}`)
+        const response = await fetch(`https://api.weatherapi.com/v1/search.json?key=${apiKey}&q=${query}`)
         const data = await response.json()
         setSuggestions(data)
       } catch {
