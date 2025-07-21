@@ -1,25 +1,26 @@
 export default function CurrentWeather({ data }) {
   return (
-    <section className="current-weather mt-[50px]">
-      <div className="container mx-auto">
-        <div className="flex flex-row items-stretch gap-4">
-          <h1 className="text-[140px] font-sans text-center" id="current-temperature">
-            {data.temperature}°
-          </h1>
-          <div className="flex-1 todays-info flex flex-col items-center justify-center">
-            <p id="current-time" className="text-lg">{data.time}</p>
-            <h2 id="current-day" className="text-2xl font-semibold">{data.day}</h2>
-            <p id="weather-type" className="italic">{data.weatherType}</p>
-          </div>
-          <div className="flex-1 side-info flex items-center justify-center">
-            <ul>
-              <li>Humidity: <span id="humidity">{data.humidity}</span></li>
-              <li>Wind: <span id="wind">{data.wind}</span></li>
-            </ul>
-          </div>
+    <section className="w-full mt-[50px]">
+      <div className="max-w-[900px] mx-auto px-4 flex flex-col md:flex-row items-center justify-center gap-14 md:gap-32">
+        <h1 className="text-[140px] font-sans text-center md:text-left">
+          {data.temperature}°
+        </h1>
+
+        <div className="flex flex-col items-center justify-center text-center md:text-left md:items-start space-y-1">
+          <p className="text-[15px] font-mono">{data.time}</p>
+          <h2 className="text-[48px] font-sans -mt-1">{data.day}</h2>
+          <p className="text-[15px] font-mono">{data.weatherType}</p>
+        </div>
+
+        <div className="flex items-center justify-center md:justify-start w-full md:w-auto mt-4 md:mt-0">
+          <ul className="text-[15px] font-mono list-none text-right md:text-left space-y-1">
+            <li style={{display: 'flex', gap: '4px', alignItems: 'center'}}>Humidity: <span>{data.humidity}</span></li>
+            <li style={{display: 'flex', gap: '4px', alignItems: 'center'}}>Wind: <span style={{whiteSpace: 'nowrap'}}>{data.wind}</span></li>
+          </ul>
         </div>
       </div>
-      <hr className="max-w-[800px] m-12 border border-[#686d80]" />
+
+      <hr className="max-w-[850px] mx-auto my-12 border border-[#686d80]" />
     </section>
   )
 }
