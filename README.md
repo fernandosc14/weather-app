@@ -1,5 +1,7 @@
 # Meteo Weather App
 
+![Preview do App](https://github.com/user-attachments/assets/86c16755-509f-4eba-95d4-6c556dfe7899)
+
 A modern weather forecast web application built with React and Vite, featuring real-time data from WeatherAPI, autocomplete city search, and a clean, responsive UI.
 
 ## Features
