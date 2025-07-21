@@ -4,6 +4,9 @@
 
 A modern weather forecast web application built with React and Vite, featuring real-time data from WeatherAPI, autocomplete city search, and a clean, responsive UI.
 
+## Demo
+[Access the live demo here](https://weather-app-eta-five-92.vercel.app/)
+
 ## Features
 
 - Current weather and 5-day forecast for any city
