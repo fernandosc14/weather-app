@@ -1,6 +1,11 @@
 # Meteo Weather App
 
+![Preview do App](https://github.com/user-attachments/assets/86c16755-509f-4eba-95d4-6c556dfe7899)
+
 A modern weather forecast web application built with React and Vite, featuring real-time data from WeatherAPI, autocomplete city search, and a clean, responsive UI.
+
+## Demo
+[Access the live demo here](https://weather-app-eta-five-92.vercel.app/)
 
 ## Features
 
@@ -99,4 +104,4 @@ This project is licensed under the MIT License.
 
 ---
 
-For any questions or support, contact [Fernando](mailto:your-email@example.com).
+For any questions or support, contact [Fernando](mailto:fscasas05@gmail.com).
